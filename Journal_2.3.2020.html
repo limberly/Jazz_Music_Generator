@@ -13413,6 +13413,84 @@ Still not sure if I want midi files or raw sound waves...?</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4/13/2020">4/13/2020<a class="anchor-link" href="#4/13/2020">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Decided to change the project because it was taking too much time to debuggin Clara codes.</p>
+<p>I will be implementing race change using GAN and Fast.ai library.</p>
+<p>Using two datasets:</p>
+<ol>
+<li>CelebA</li>
+<li>UTKFace</li>
+</ol>
+<p>Wrote a python script to automatically sort through UTKFace datset into White, Asian, Black, and Indian.</p>
+<p>Tried training on UTKFace dataset to generate faces. It resulted in garbage output.</p>
+<p>Decided to pretrain the model with CelebA dataset which has more data than UTKFace dataset.</p>
+<p>Trained 25 epochs with CelebA dataset. It took about 8-9 hours.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4/20/2020">4/20/2020<a class="anchor-link" href="#4/20/2020">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Trying training the model using transfer learning: Using the pre-trained weights from CelebA dataset, train the UTKFace dataset. Trying with the Black images first.</p>
+<p>The outcome is much better than starting with UTKFace dataset.</p>
+<p>Play around with learning rates and epochs to see if I can get better results.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4/27/2020">4/27/2020<a class="anchor-link" href="#4/27/2020">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Training about 500 epochs could get decent results for face generation.</p>
+<p>Applying the weights directly to White image gave a surprising result of changing the White face into Black face.</p>
+<p>Color is not great, but one can see that it has the attributes of black person's face.</p>
+<p>Now, working on U-net structure to apply super-resolution to the race changed output.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5/4/2020">5/4/2020<a class="anchor-link" href="#5/4/2020">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finished all training and finished writing the reports.
+Finished presentation.</p>
+<p>Results were decent, but could be better with better access to hardware.</p>
+<p>It is success in the sense that the result was achievable with less coding, free resource from Google Colab, and moderately priced GPU. Also, training was done in 32 by 32 image, so the result is great considering the output was very small.</p>
+
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
